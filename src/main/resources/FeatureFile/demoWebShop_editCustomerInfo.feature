@@ -8,8 +8,8 @@ Feature: Edit Customer Info Functionality
     Then First name and last name should be updated
 
   Scenario: Edit email address
-#    Given User navigate to demo web shop
-#    And User login to account
-#    When User navigate to customer info page
+    Given User navigate to demo web shop
+    And User login to account
+    When User navigate to customer info page
     And User update email address
     Then Email address should be updated
