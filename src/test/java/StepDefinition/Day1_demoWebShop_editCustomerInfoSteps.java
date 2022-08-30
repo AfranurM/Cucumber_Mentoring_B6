@@ -12,7 +12,7 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class demoWebShop_editCustomerInfoSteps {
+public class Day1_demoWebShop_editCustomerInfoSteps {
 
     WebDriver driver;
     WebDriverWait wait;
