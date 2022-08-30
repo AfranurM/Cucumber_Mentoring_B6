@@ -8,9 +8,9 @@ Feature: Web App Security Functionalities
     Then Result should be "<Result>"
 
     Examples:
-      | Payee Name | Payee Address | Account | Payee Details | Result |
-      | Phoebe     | Chicago       | bank    | working       | Pass   |
-      |            | Chicago       | bank    | working       | Fail   |
-      | Joey       |               | bank    | working       | Fail   |
-      | Joey       | Chicago       | bank    |               | Pass   |
-      | Joey       | Chicago       |         |               | Fail   |
+      | Payee Name | Payee Address | Account | Payee Details | Result       |
+      | Phoebe     | Chicago       | bank    | working       | successful   |
+      |            | Chicago       | bank    | working       | unsuccessful |
+      | Joey       |               | bank    | working       | unsuccessful |
+      | Joey       | Chicago       | bank    |               | successful   |
+      | Joey       | Chicago       |         |               | unsuccessful |

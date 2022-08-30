@@ -85,14 +85,14 @@ public class Day2_WebAppSecurityFunctionalitiesTest {
     @Then("Result should be {string}")
     public void result_should_be(String result) {
 
-        if(result.equals("Pass")){
+        if(result.equals("successful")){
             WebElement successMessage = driver.findElement(By.id("alert_content"));
             Assert.assertTrue(successMessage.isDisplayed());
 
             WebElement makePaymentsMessage = driver.findElement(By.className("board-header"));
             Assert.assertTrue(makePaymentsMessage.isDisplayed());
 
-        }else if(result.equals("Fail")){
+        }else if(result.equals("unsuccessful")){
             WebElement makePaymentsMessage = driver.findElement(By.className("board-header"));
             Assert.assertFalse(makePaymentsMessage.isDisplayed());
         }
