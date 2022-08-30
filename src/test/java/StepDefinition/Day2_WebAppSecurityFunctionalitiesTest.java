@@ -17,6 +17,7 @@ public class Day2_WebAppSecurityFunctionalitiesTest {
 
     @Given("User navigate to Web App Security")
     public void user_navigate_to_web_app_security() {
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
