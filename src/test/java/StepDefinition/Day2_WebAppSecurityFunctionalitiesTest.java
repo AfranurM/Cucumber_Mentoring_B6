@@ -10,8 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.concurrent.TimeUnit;
-
 public class Day2_WebAppSecurityFunctionalitiesTest {
 
     WebDriver driver;
@@ -22,7 +20,6 @@ public class Day2_WebAppSecurityFunctionalitiesTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://zero.webappsecurity.com/index.html");
 
     }
@@ -50,6 +47,8 @@ public class Day2_WebAppSecurityFunctionalitiesTest {
     }
     @When("User navigates to Add New Payee Section")
     public void user_navigates_to_add_new_payee_section() {
+
+        wait = new WebDriverWait(driver, 10);
 
         WebElement onlineBankingButton = driver.findElement(By.cssSelector("#onlineBankingMenu>div>strong"));
         onlineBankingButton.click();
