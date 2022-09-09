@@ -35,6 +35,7 @@ public class Day3_LumaLoginFunctionalityTest {
     @Then("User should be successfully signed in")
     public void user_should_be_successfully_signed_in() {
         loginPageElements.findAndContainsText("welcomeText", "welcome,");
+        Driver.quitDriver();
 
     }
 }
